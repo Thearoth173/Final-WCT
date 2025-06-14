@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/students', function () {
     
     $students = [
-        ['id' => 1, 'name' => 'Yim sokunthearoth', 'email' => 'sokroth@example.com'],
-        ['id' => 2, 'name' => 'mut bros', 'email' => 'mutbros@example.com'],
-        ['id' => 3, 'name' => 'yort', 'email' => 'yort@example.com']
+        ['id' => 1, 'name' => 'Yim sokunthearoth', 'email' => 'sokroth@gmail.com'],
+        ['id' => 2, 'name' => 'mut bros', 'email' => 'mutbros@gmail.com'],
+        ['id' => 3, 'name' => 'yort', 'email' => 'yort@gmail.com']
     ];
 
     return response()->json([
@@ -21,9 +21,9 @@ Route::get('/students', function () {
 Route::get('/students/{id}', function ($id) {
 
     $studentData = [
-        1 => ['id' => 1, 'name' => 'Yim sokunthearoth', 'email' => 'sokroth@example.com'],
-        2 => ['id' => 2, 'name' => 'mut bros', 'email' => 'mutbros@example.com'],
-        3 => ['id' => 3, 'name' => 'yort', 'email' => 'yort@example.com']
+        1 => ['id' => 1, 'name' => 'Yim sokunthearoth', 'email' => 'sokroth@gmail.com'],
+        2 => ['id' => 2, 'name' => 'mut bros', 'email' => 'mutbros@gmail.com'],
+        3 => ['id' => 3, 'name' => 'yort', 'email' => 'yort@gmail.com']
     ];
 
     if (isset($studentData[$id])) {
@@ -65,9 +65,14 @@ Route::put('/students/{id}', function (Request $request, $id) {
 
     // Your simulated student data (this part is fine for simulation)
     $studentData = [
-        1 => ['id' => 1, 'name' => 'Yim sokunthearoth', 'email' => 'sokroth@example.com'],
-        2 => ['id' => 2, 'name' => 'mut bros', 'email' => 'mutbros@example.com'],
-        3 => ['id' => 3, 'name' => 'yort', 'email' => 'yort@example.com']
+        1 => ['id' => 1, 'name' => 'Yim sokunthearoth', 'email' => 'sokroth@gmail.com'],
+        2 => ['id' => 2, 'name' => 'mut bros', 'email' => 'mutbros@gmail.com'],
+        3 => ['id' => 3, 'name' => 'yort', 'email' => 'yort@gmail
+        
+        
+        
+        
+        .com']
     ];
 
     if (!isset($studentData[$id])) {
